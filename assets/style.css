@@ -141,10 +141,16 @@ h2{
     padding: 1rem;
     border-bottom: 5px solid var(--dark);
 }
-
+.contacts a{
+    text-decoration: none;
+}
 .contacts a:hover{
     background-color: var(--dark);
     color: var(--light);
+}
+
+.phone{
+    user-select: all;
 }
 /**/
 .justify-content-center{
