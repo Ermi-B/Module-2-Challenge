@@ -8,21 +8,19 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+
+    
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 body{
 background-color: rgba(234, 234, 234, 0.33);
-}
 
-main{
-    width: 100%;
 }
 
 header{
     background-color: var(--dark);
    
-    width: 100%;
+    
 
 }
 h1{
@@ -32,7 +30,11 @@ h1{
     color: var(--light);
     font-size: 300%;
 }
-
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
+}
 nav ul{ 
     list-style: none;
     font-size: 250%;  
@@ -61,8 +63,8 @@ nav a:hover{
 .subtitle{
     padding: 5%;
     background-image: url("https://static.wixstatic.com/media/bb1bd6_51f1319f65374441b87f8510b881fd3e~mv2.jpg/v1/fill/w_578,h_578,al_c,lg_1,q_80,enc_auto/bb1bd6_51f1319f65374441b87f8510b881fd3e~mv2.jpg");
-    height: 17rem;
-    margin-bottom: 2rem;
+    
+   
 }
 
 .subtitle h2{
@@ -95,15 +97,16 @@ h2{
     display: flex;
     flex-flow: row wrap;
     border-radius: 10px;
-    width: 100%;
     margin: 5rem;
     
     
 
 }
+
+
 .container{
-  padding: 1%;
-  margin: 1%;
+  
+  padding: 3%;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -111,17 +114,26 @@ h2{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     border: 7px solid var(--light);
-    margin: 10px;
     background-color: var(--dark);
+    margin: 1%;
+    
     
 }
 .card img{
-    flex: 1 0 auto;
-    height: 305px;
-    object-fit: cover;   
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    
+    max-width: 100%;
+    max-height:100%;
+    
+    object-fit: contain;   
     opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in;
+    
 
 }
 .card img:hover{
