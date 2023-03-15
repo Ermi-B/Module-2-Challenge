@@ -1,0 +1,170 @@
+:root{
+    --white:white;
+    --dark:rgb(36, 60, 84);
+    --light:rgb(45, 221, 186);
+   
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+background-color: rgba(234, 234, 234, 0.33);
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    background-color: var(--dark);
+   
+    width: 100%;
+
+}
+h1{
+    position: absolute;
+    left: 8%;
+    top: 2%;
+    color: var(--light);
+    font-size: 300%;
+}
+
+nav ul{ 
+    list-style: none;
+    font-size: 250%;  
+    
+    
+
+}
+nav li{
+    margin: 1rem 4rem 2rem 0rem;
+    
+    padding: 0.5rem;
+    border-bottom: 5px solid var(--light);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--light);
+   
+    
+}
+nav a:hover{
+    color: black;
+    background-color: var(--light);
+}
+
+.subtitle{
+    padding: 5%;
+    background-image: url("https://static.wixstatic.com/media/bb1bd6_51f1319f65374441b87f8510b881fd3e~mv2.jpg/v1/fill/w_578,h_578,al_c,lg_1,q_80,enc_auto/bb1bd6_51f1319f65374441b87f8510b881fd3e~mv2.jpg");
+    height: 17rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle h2{
+    
+    color:rgb(133, 234, 243);  
+    font-family:serif; 
+    font-style: italic;
+    font-size: 500%;
+    
+}
+
+h2{
+    font-size: 280%;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    
+}
+
+
+
+
+.details{
+    margin: 2rem;
+    width: 70%;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5rem;
+    
+    
+
+}
+.container{
+  padding: 1%;
+  margin: 1%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 5px solid var(--dark);
+}
+
+.card{
+    border: 7px solid var(--light);
+    margin: 10px;
+    background-color: var(--dark);
+    
+}
+.card img{
+    flex: 1 0 auto;
+    height: 305px;
+    object-fit: cover;   
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+
+}
+.card img:hover{
+    opacity: 1;
+}
+
+.contacts ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.contacts li{
+    padding: 3rem;
+}
+.contacts h3{
+    padding: 1rem;
+    border-bottom: 5px solid var(--dark);
+}
+
+.contacts a:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+/**/
+.justify-content-center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.justify-content-right{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.justify-content-left{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
