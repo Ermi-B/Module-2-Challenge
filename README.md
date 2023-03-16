@@ -8,6 +8,7 @@
 
 ## Usage
 -  Click on the following link to browse the portfolio.
+https://ermi-b.github.io/Module-2-Challenge/
 
 ## Credits
 - Designed by Ermiyas Bekele
