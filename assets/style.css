@@ -20,8 +20,10 @@ header{
 h1{
     margin-left: 8%;
     margin-right: auto;
-    color: var(--light);
+    color: var(--dark);
     font-size: 300%;
+    background-color: var(--light);
+    
     
 }
 
