@@ -8,11 +8,7 @@
     padding: 0px;
     margin: 0px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-body{
-background-color: rgba(234, 234, 234, 0.33);
-
+    font-size: x-large;
 }
 
 header{
@@ -26,6 +22,7 @@ h1{
     margin-right: auto;
     color: var(--light);
     font-size: 300%;
+    
 }
 
 nav{
@@ -68,7 +65,8 @@ nav a:hover{
 }
 
 h2{
-    font-size: 280%;
+    font-size: 200%;
+    color: var(--dark);
 }
 .about{
     display: flex;
@@ -93,7 +91,7 @@ h2{
   flex-wrap: wrap;
   padding: 3%;
   width: 70%;
-  border-left: 5px solid var(--dark);
+  border-left: 6px solid var(--dark);
   
 }
 
@@ -109,7 +107,7 @@ h2{
     
     
 }
-.card img{
+.card img,a{
     flex: 1;
     width: 100%;
     height: 100%;
@@ -118,17 +116,20 @@ h2{
     max-height:100%;
     
     object-fit: cover;   
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+.card img:hover{
+    opacity: 1;
     
+}
 
+.card h3{
+    display: flex;
 }
 .resize{ 
     height: 300px; 
     width: 45%;
-}
-.card img:hover{
-    opacity: 1;
 }
 
 .contacts{
@@ -205,8 +206,9 @@ footer a:hover{
 /*Media Query*/
  /* larger screens*/
 @media  screen and (min-width : 992px) {
- 
+ /*This is by default working fine*/
 }
+
 /* Medium screens*/
 @media  screen and (min-width : 767px) and (max-width:991px) {
     nav ul{ 
@@ -265,12 +267,11 @@ footer a:hover{
      
         width: 70%;
         border-left: hidden;
-        border-top: 5px solid var(--dark);
+        
         
       }
 
-      .about{
-        
+      .about{        
         flex-direction: column;
         width: 100%;    
     }
@@ -285,13 +286,10 @@ footer a:hover{
         margin: 3%;
         width: 100%;
         height: 100%;
-    }
+}
 
     .contacts ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     
     
