@@ -43,8 +43,8 @@ nav ul{
 }
 nav li{
     margin: 1rem 2rem 2rem 0;
-  padding: 0.5rem;
-  border-bottom: 5px solid var(--light);
+    padding: 0.5rem;
+    border-bottom: 5px solid var(--light);
 }
 
 nav a{
@@ -104,6 +104,9 @@ h2{
     border: 7px solid var(--light);
     background-color: var(--dark);
     margin: 1%;
+    width: 90%;
+    height: 40%;
+    
     
     
 }
@@ -115,7 +118,7 @@ h2{
     max-width: 100%;
     max-height:100%;
     
-    object-fit: contain;   
+    object-fit: cover;   
     opacity: 0.5;
     transition: opacity 0.3s ease-in;
     
@@ -129,14 +132,19 @@ h2{
     opacity: 1;
 }
 
+.contacts{
+    display: flex;
+    flex-flow: row wrap;
+}
 .contacts ul{
     list-style: none;
     display: flex;
+    flex-flow: row wrap;
     
 }
 
 .contacts li{
-    padding: 3rem;
+    padding: 1rem;
 }
 .contacts h3{
     padding: 1rem;
@@ -178,3 +186,113 @@ h2{
 }
 
 /*Media Query*/
+ /* larger screens*/
+@media  screen and (min-width : 992px) {
+    .contacts{
+
+    }
+}
+/* Medium screens*/
+@media  screen and (min-width : 767px) and (max-width:991px) {
+    nav ul{ 
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+        font-size: 200%;  
+    
+    }
+
+    .container{
+     
+        width: 60%;
+        border-left: hidden;
+        border-top: 5px solid var(--dark);
+        
+      }
+
+      .about{
+        
+        flex-direction: column;
+        width: 100%;    
+    }
+
+   
+
+    .row{
+        
+        flex-flow: column wrap;
+          
+    
+    }
+
+    .card{
+       
+        margin: 3%;
+        width: 100%;
+        height: 100%;
+        
+        
+        
+    }
+
+    .contacts ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+/* Smaller screens*/
+
+@media  screen and (max-width : 767px) {
+    nav ul{ 
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+        font-size: 200%;  
+    
+    }
+
+    .container{
+     
+        width: 70%;
+        border-left: hidden;
+        border-top: 5px solid var(--dark);
+        
+      }
+
+      .about{
+        
+        flex-direction: column;
+        width: 100%;    
+    }
+
+   
+
+    .row{
+        
+        flex-flow: column wrap;
+          
+    
+    }
+
+    .card{
+       
+        margin: 3%;
+        width: 100%;
+        height: 100%;
+        
+        
+        
+    }
+
+    .contacts ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+}
