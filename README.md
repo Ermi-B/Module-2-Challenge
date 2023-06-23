@@ -8,7 +8,7 @@
 
 ## Usage
 -  Click on the following link to browse the portfolio.
-https://ermi-b.github.io/Module-2-Challenge/
+https://ermi-b.github.io/portfolio/
 
 - Use the navigation bar links to navigate through different parts of the page or scroll.
 
